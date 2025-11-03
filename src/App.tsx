@@ -8,7 +8,7 @@ interface Task {
   createdAt: string;
 }
 
-const API_BASE_URL = 'https://04056hk94h.execute-api.us-east-1.amazonaws.com/';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
